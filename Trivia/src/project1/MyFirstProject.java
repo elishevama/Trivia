@@ -182,20 +182,79 @@ public class MyFirstProject {
         	
         	
         }catch (Exception e) {
-        	
-        	
+        	System.out.println("This is the second question");
         }
-
-		}
-}
-
-
-	
-
-	
-	
-
         
+        }
+        	
+        	
+        
+        
+        @Test
+        public void SanityTest5 () {
+         Object junitTest;
+
+
+        WebDriver driver=new ChromeDriver();
+        Scanner scanner=new Scanner(System.in);
+   
+
+
+     try {
+	click();
+	driver.findElement(By.xpath("//*[@id=\"myform1\"]/div/div/div/input")).sendKeys("names");
+	driver.findElement((By) By.id("nextquest")).click();
+	
+	  
+	  
+     }catch (Exception e) {
+	System.out.println("this is the third question");
+	
+	
+  }
+    if(driver.getPageSource().contains("Back")==true) {
+	   assertEquals(true,driver.findElement(By.name("question")).isEnabled());
+			
+	   
+		}
+        
+    
+    }
+		//else
+		//	fail("ERROR");	
+       
+
+
+    @Test
+     public void SanityTest6 () {
+      Object junitTest;
+
+
+      WebDriver driver=new ChromeDriver();
+       Scanner scanner=new Scanner(System.in);
+
+      try {
+	driver.findElement(By.cssSelector("#answers > div:nth-child(2) > div.col-sm-11 > input")).sendKeys("Liam");
+	driver.findElement(By.cssSelector("#answers > div:nth-child(3) > div.col-sm-11 > input")).sendKeys("Netanel");
+	driver.findElement(By.cssSelector("#answers > div:nth-child(4) > div.col-sm-11 > input")).sendKeys("ruth");
+	driver.findElement(By.cssSelector("#answers > div:nth-child(5) > div.col-sm-11 > input")).sendKeys("Monica");
+	
+	
+	TimeUnit Theard = null;
+	Theard.sleep(5000);
+	WebElement radioBtn2=driver.findElement(By.xpath("//*[@id=\"answers\"]/div[2]/div[1]/input"));
+	radioBtn2.click();
+	driver.findElement((By) By.id("nextquest")).click();
+	
+	
+    }catch (Exception e) {
+    
+    	
+    
+    }
+	
+    }
+    }
         
 
 
