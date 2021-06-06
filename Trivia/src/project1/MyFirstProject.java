@@ -57,13 +57,13 @@ public class MyFirstProject {
 	    
 	    try {
 	    	click();
-	    	driver.findElement(By.xpath("//*[@id=\"myform1\"]/div/div/div/input")).sendKeys("animal");
-	    	//driver.findElement(By.cssSelector("#myform1 > div > div > div > input")).sendKeys("animal");
-		//driver.findElement ((By) By.name("question")).sendKeys("animal");
+	    	driver.findElement(By.xpath("//*[@id=\"myform1\"]/div/div/div/input")).sendKeys("a");
+	    	//driver.findElement(By.cssSelector("#myform1 > div > div > div > input")).sendKeys("a");
+		//driver.findElement ((By) By.name("question")).sendKeys("a");
 		driver.findElement((By) By.id("nextquest")).click();
 		
 	    } catch (Exception e) {
-	    	System.out.println("animal list");
+	    	System.out.println("the letter a");
 	    	
 	    }
 		
@@ -94,14 +94,11 @@ public class MyFirstProject {
 		
 	    try {
 	    	
-	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[1]/div[2]/input")).sendKeys("dog");
-	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[2]/div[2]/input")).sendKeys("cat");
-	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[3]/div[2]/input")).sendKeys("zebra");
-	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[4]/div[2]/input")).sendKeys("bird");
-	    	//driver.findElement ((By)By.name("answer1")).sendKeys("dog");
-	    	//driver.findElement ((By)By.name("answer1")).sendKeys("cat");
-	    	//driver.findElement ((By)By.name("answer1")).sendKeys("zebra");
-	    	//driver.findElement ((By)By.name("answer1")).sendKeys("bird");
+	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[1]/div[2]/input")).sendKeys("b");
+	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[2]/div[2]/input")).sendKeys("c");
+	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[3]/div[2]/input")).sendKeys("d");
+	    	driver.findElement(By.xpath("//*[@id=\"answers\"]/div[4]/div[2]/input")).sendKeys("e");
+	    	
 	    	
 	   
 			TimeUnit Theard = null;
@@ -139,7 +136,7 @@ public class MyFirstProject {
 
         try {
         	click();
-        	driver.findElement(By.xpath("//*[@id=\"myform1\"]/div/div/div/input")).sendKeys("food");
+        	driver.findElement(By.xpath("//*[@id=\"myform1\"]/div/div/div/input")).sendKeys("f");
         	driver.findElement((By) By.id("nextquest")).click();
         	
       	  
@@ -168,10 +165,10 @@ public class MyFirstProject {
         Scanner scanner=new Scanner(System.in);
         
         try {
-        	driver.findElement(By.cssSelector("#answers > div:nth-child(2) > div.col-sm-11 > input")).sendKeys("apple");
-        	driver.findElement(By.cssSelector("#answers > div:nth-child(3) > div.col-sm-11 > input")).sendKeys("beans");
-        	driver.findElement(By.cssSelector("#answers > div:nth-child(4) > div.col-sm-11 > input")).sendKeys("corn");
-        	driver.findElement(By.cssSelector("#answers > div:nth-child(5) > div.col-sm-11 > input")).sendKeys("yogurt");
+        	driver.findElement(By.cssSelector("#answers > div:nth-child(2) > div.col-sm-11 > input")).sendKeys("g");
+        	driver.findElement(By.cssSelector("#answers > div:nth-child(3) > div.col-sm-11 > input")).sendKeys("k");
+        	driver.findElement(By.cssSelector("#answers > div:nth-child(4) > div.col-sm-11 > input")).sendKeys("l");
+        	driver.findElement(By.cssSelector("#answers > div:nth-child(5) > div.col-sm-11 > input")).sendKeys("m");
         	
         	
         	TimeUnit Theard = null;
@@ -202,7 +199,7 @@ public class MyFirstProject {
 
      try {
 	click();
-	driver.findElement(By.xpath("//*[@id=\"myform1\"]/div/div/div/input")).sendKeys("names");
+	driver.findElement(By.xpath("//*[@id=\"myform1\"]/div/div/div/input")).sendKeys("n");
 	driver.findElement((By) By.id("nextquest")).click();
 	
 	  
@@ -234,10 +231,10 @@ public class MyFirstProject {
        Scanner scanner=new Scanner(System.in);
 
       try {
-	driver.findElement(By.cssSelector("#answers > div:nth-child(2) > div.col-sm-11 > input")).sendKeys("Liam");
-	driver.findElement(By.cssSelector("#answers > div:nth-child(3) > div.col-sm-11 > input")).sendKeys("Netanel");
-	driver.findElement(By.cssSelector("#answers > div:nth-child(4) > div.col-sm-11 > input")).sendKeys("ruth");
-	driver.findElement(By.cssSelector("#answers > div:nth-child(5) > div.col-sm-11 > input")).sendKeys("Monica");
+	driver.findElement(By.cssSelector("#answers > div:nth-child(2) > div.col-sm-11 > input")).sendKeys("o");
+	driver.findElement(By.cssSelector("#answers > div:nth-child(3) > div.col-sm-11 > input")).sendKeys("p");
+	driver.findElement(By.cssSelector("#answers > div:nth-child(4) > div.col-sm-11 > input")).sendKeys("s");
+	driver.findElement(By.cssSelector("#answers > div:nth-child(5) > div.col-sm-11 > input")).sendKeys("q");
 	
 	
 	TimeUnit Theard = null;
@@ -249,26 +246,107 @@ public class MyFirstProject {
 	
     }catch (Exception e) {
     
+    
+    	{
+    	}
+    }
+    	}
+    
+  	
+    
+
+
+   
+    
+
+    @Test
+    public void SanityTest7 () {
+     Object junitTest;
+
+
+    WebDriver driver=new ChromeDriver();
+    try {
+    driver.findElement(By.className("w3-btn w3-round-xlarge w3-hover-purple w3-khaki w3-padding-large playCB")).click();
+    
+    
+    }catch (Exception e) {
+    	if(driver.getPageSource().contains("Back")==true) {
+   	   assertEquals(true,driver.findElement(By.name("question")).isEnabled());
+    		   
+    }
     	
+    }	
+    	
+    	
+    }
+    {
     
     }
-	
-    }
-    }
-        
 
 
-    
-       
-         
-		
-		
-		
-	
-	
-	
 
-	
-		
-	
+  
+     @Test
+     public void SanityTest8 () {
+     Object junitTest;
 
+     
+     WebDriver driver=new ChromeDriver();
+     try {
+    WebElement RadioBtn= driver.findElement(By.name("answertest2"));
+    RadioBtn.click();
+    WebElement NextButton= driver.findElement(By.id("btnnext"));
+    NextButton.click();
+	
+	
+   
+     }catch(Exception e) {
+    	 
+     }
+
+     }
+     		
+
+
+   
+     @Test
+     public void SanityTest9 () {
+     Object junitTest;
+     
+     WebDriver driver=new ChromeDriver();
+     try {
+    	 WebElement RadioBtn1= driver.findElement(By.name("answertest1"));
+    	 RadioBtn1.click();
+    	 WebElement NextButton= driver.findElement(By.id("btnnext"));
+    	 NextButton.click();
+    	 
+     }catch(Exception e) {
+     
+
+     
+     
+     }
+     
+
+}
+
+
+     @Test
+     public void SanityTest10 () {
+     Object junitTest;
+     
+     WebDriver driver=new ChromeDriver();
+     try {
+    	 WebElement RadioBtn2= driver.findElement(By.name("answertest0"));
+    	 RadioBtn2.click();
+    	 WebElement NextButton= driver.findElement(By.id("btnnext"));
+    	 NextButton.click();
+    	 
+     }catch(Exception e) {
+    	 
+     
+     }
+     
+     }
+     
+}
