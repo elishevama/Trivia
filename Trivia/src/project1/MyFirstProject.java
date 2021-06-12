@@ -63,7 +63,7 @@ public class MyFirstProject {
 		driver.findElement((By) By.id("nextquest")).click();
 		
 	    } catch (Exception e) {
-	    	System.out.println("the letter a");
+	    	System.out.println(e.getMessage());
 	    	
 	    }
 		
@@ -116,6 +116,7 @@ public class MyFirstProject {
 	    	
 	    	
 	    }catch (Exception e) {
+	    	System.out.println(e.getMessage());
 	    	
 	    }
 	    	
@@ -142,7 +143,7 @@ public class MyFirstProject {
       	  
       	  
         }catch (Exception e) {
-        	System.out.println("this is the second question");
+        	System.out.println(e.getMessage());
         	
         	
         }
@@ -179,7 +180,7 @@ public class MyFirstProject {
         	
         	
         }catch (Exception e) {
-        	System.out.println("This is the second question");
+        	System.out.println(e.getMessage());
         }
         
         }
@@ -205,7 +206,7 @@ public class MyFirstProject {
 	  
 	  
      }catch (Exception e) {
-	System.out.println("this is the third question");
+	System.out.println(e.getMessage());
 	
 	
   }
@@ -245,6 +246,7 @@ public class MyFirstProject {
 	
 	
     }catch (Exception e) {
+    	System.out.println(e.getMessage());
     
     
     	{
@@ -270,6 +272,7 @@ public class MyFirstProject {
     
     
     }catch (Exception e) {
+    	System.out.println(e.getMessage());
     	if(driver.getPageSource().contains("Back")==true) {
    	   assertEquals(true,driver.findElement(By.name("question")).isEnabled());
     		   
@@ -301,6 +304,7 @@ public class MyFirstProject {
 	
    
      }catch(Exception e) {
+    	 System.out.println(e.getMessage());
     	 
      }
 
@@ -321,6 +325,7 @@ public class MyFirstProject {
     	 NextButton.click();
     	 
      }catch(Exception e) {
+    	 System.out.println(e.getMessage());
      
 
      
@@ -343,6 +348,7 @@ public class MyFirstProject {
     	 NextButton.click();
     	 
      }catch(Exception e) {
+    	 System.out.println(e.getMessage());
     	 
      
      }

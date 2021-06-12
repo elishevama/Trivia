@@ -20,10 +20,5 @@
 			<type>2</type>
 			<locationURI>PARENT-4-PROJECT_LOC/Downloads/openjfx-11.0.2_windows-x64_bin-sdk</locationURI>
 		</link>
-		<link>
-			<name>driver/webdriver</name>
-			<type>2</type>
-			<locationURI>PARENT-6-PROJECT_LOC/Program%20Files/webdriver</locationURI>
-		</link>
 	</linkedResources>
 </projectDescription>
