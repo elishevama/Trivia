@@ -257,6 +257,7 @@ public  void main(String[] args) {
 			System.out.println(e.getMessage());
 	
 }
+		driver.quit();
 	}
 	}
 	
