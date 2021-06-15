@@ -284,8 +284,14 @@ public  void main(String[] args) {
 	
 }
 	}
+		@Test
+		public void Test16 () {
+			WebDriver driver =new ChromeDriver();
+			WebElement TryAgainButton = driver.findElement(By.className("w3-btn w3-round-xlarge w3-hover-purple w3-khaki w3-padding-large playCB"));
+			TryAgainButton.click();
+	}
 	@Test
-	public void Test16 () {
+	public void Test17 () {
 		WebDriver driver =new ChromeDriver();
 		
 
