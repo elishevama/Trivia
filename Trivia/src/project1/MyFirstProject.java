@@ -34,6 +34,7 @@ public class MyFirstProject {
 
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://shemsvcollege.github.io/Trivia/");
+		System.out.println(driver.getTitle());
 		
 		WebElement TriviaStartButton = driver.findElement(By.id("startB"));
 		TriviaStartButton.click();
