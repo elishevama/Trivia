@@ -22,5 +22,6 @@
 			<attribute name="javadoc_location" value="jar:file:/C:/Users/elisheva/Downloads/pdfbox-2.0.8-javadoc.jar!/"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/elisheva/Downloads/facebook-unity-sdk-11.0.0.zip"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,4 +1,6 @@
+import java.awt.Label;
 import java.util.InputMismatchException;
+
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
@@ -8,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import javafx.fxml.FXML;
 import javafx.scene.control.RadioButton;
 
 
@@ -125,18 +128,55 @@ public  void main(String[] args) {
 		
 }
 }
+	@FXML
+	
+	private Label myLabel;
+	
+	@FXML
+	private RadioButton rButton1,rButton2,rButton3,rButton4;
+	
 	@Test
 	public void Test8 () {
 		WebDriver driver =new ChromeDriver();
 	try {
-		RadioButton CollegeButton=new RadioButton("College");
-		WebElement radioBtn=driver.findElement(By.name("answer"));
-		radioBtn.clear();
+		//RadioButton CollegeButton=new RadioButton("College");
+	    WebElement radioButton=driver.findElement(By.name("answer"));
+		//radioButton.clear();
+		if(rButton1.isSelected()) {
+			myLabel.setText("College");
+		}
+			//RadioButton MasterButton=new RadioButton("Master");
+			else if(rButton2.isSelected()) {
+				myLabel.setText("Master");
+			}
 		
-	}catch(Exception e) {
-		System.out.println("mark Radio Button");
-	}
-	}
+				//RadioButton keyButton=new RadioButton("Key");
+				else if(rButton3.isSelected()) {
+					myLabel.setText("key");	
+				}
+	        	//RadioButton PublicButton=new RadioButton("Public");
+	        	else if(rButton4.isSelected()){
+	        		myLabel.setText("Public");
+	        	}
+	WebElement rButton3=driver.findElement(By.name("answer"));
+	rButton3.click();
+	rButton3.isSelected();
+		
+		WebElement NextButton = driver.findElement(By.id("nextquest"));
+		NextButton .click();
+		
+	       }catch(Exception e) {
+		    System.out.println(e.getMessage());
+	        		
+			}
+			
+		
+		}
+		
+	
+	
+	
+
 	
 	@Test
 	public void Test9 () {
