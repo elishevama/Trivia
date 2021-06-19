@@ -20,5 +20,10 @@
 			<type>2</type>
 			<locationURI>PARENT-4-PROJECT_LOC/Downloads/openjfx-11.0.2_windows-x64_bin-sdk</locationURI>
 		</link>
+		<link>
+			<name>driver/geckodriver-v0.29.1-win64</name>
+			<type>2</type>
+			<locationURI>PARENT-4-PROJECT_LOC/Downloads/geckodriver-v0.29.1-win64</locationURI>
+		</link>
 	</linkedResources>
 </projectDescription>
