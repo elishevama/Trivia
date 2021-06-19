@@ -7,13 +7,19 @@ import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.*;
 import javax.naming.spi.DirStateFactory.Result;
 
-import org.apache.commons.exec.util.DebugUtils;
+import org.junit.Assert.*;
 
+import org.apache.commons.exec.util.DebugUtils;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 public class IntegrationTest {
 
 	public static void main(String[] args, Object Theard) throws MalformedURLException {
 		// TODO Auto-generated method stub
-
+      
 		//public static void ShareLink
 			
 		WebDriver driver =new ChromeDriver();
