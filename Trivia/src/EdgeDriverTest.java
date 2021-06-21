@@ -58,7 +58,7 @@ public class EdgeDriverTest {
 			}
 }
 	@Test
-	public void tes4() {
+	public void test4() {
 		
 			EdgeDriver driver =new EdgeDriver();
 			try {

@@ -63,8 +63,9 @@ public class EdgeDriverTest {
 		
 			EdgeDriver driver =new EdgeDriver();
 			try {
+				Scanner scanner = new Scanner(System.in);
 				driver.findelement(By.name("question")).sendKeys("מה עולה המנוי במועדון שלכם");
-				
+				System.out.println(scanner);
 			}catch(InputMismatchException e ) {
 				System.out.println("can't contin hebrew Characters");
 				WebElement NextButton=driver.findelement(By.id("nextquest"));
